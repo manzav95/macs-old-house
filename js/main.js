@@ -34,6 +34,15 @@
     });
   }
 
+  const apple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+  if (apple) {
+    const appleMaps =
+      "https://maps.apple.com/?daddr=3100+E+18th+St,+Antioch,+CA+94509&dirflg=d";
+    document.querySelectorAll("[data-maps='directions']").forEach((a) => {
+      a.href = appleMaps;
+    });
+  }
+
   if (reduce.matches) return;
 
   let ticking = false;
