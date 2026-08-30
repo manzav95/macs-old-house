@@ -283,7 +283,7 @@ p { margin: 0 0 1em; }
 }
 .work-compact {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.72fr 1.28fr;
   gap: 1.6rem;
   align-items: center;
 }
@@ -292,11 +292,11 @@ p { margin: 0 0 1em; }
 .work-thumbs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.65rem;
+  gap: 0.75rem;
 }
 .work-thumbs img {
   width: 100%;
-  height: 8.5rem;
+  height: 13.5rem;
   object-fit: cover;
   border: 1px solid var(--rule);
 }
@@ -462,7 +462,7 @@ p { margin: 0 0 1em; }
   .about-grid, .menu-board, .quotes, .visit-grid, .footer-grid, .plate-wide, .work-compact {
     grid-template-columns: 1fr;
   }
-  .work-thumbs img { height: 7.5rem; }
+  .work-thumbs img { height: 11rem; }
   .about-frame img { height: 22rem; }
   .hero-copy { padding: 0 1.3rem 8vh; }
   .hero .display { font-size: clamp(4.2rem, 22vw, 7rem); }
