@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 520" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Mac's Old House</title>
+  <defs>
+    <linearGradient id="enamel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a2422"/>
+      <stop offset="1" stop-color="#5c1413"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 8h180c8 0 14 6 14 14v476c0 8-6 14-14 14H20c-8 0-14-6-14-14V22c0-8 6-14 14-14z" fill="#3d4a36"/>
+  <path d="M28 18h164c6 0 10 4 10 10v464c0 6-4 10-10 10H28c-6 0-10-4-10-10V28c0-6 4-10 10-10z" fill="url(#enamel)" stroke="#c9a15b" stroke-width="3"/>
+  <g fill="#f3ead8" font-family="Impact, 'Arial Narrow', sans-serif" font-size="78" font-weight="700" text-anchor="middle">
+    <text x="110" y="100">M</text>
+    <text x="110" y="178">A</text>
+    <text x="110" y="256">C</text>
+    <text x="110" y="334">S</text>
+  </g>
+  <path d="M70 360h80l-40 36z" fill="#4d5c45"/>
+  <rect x="100" y="376" width="20" height="14" fill="#f3ead8" opacity=".85"/>
+  <rect x="42" y="412" width="136" height="54" rx="4" fill="#f3ead8"/>
+  <text x="110" y="446" text-anchor="middle" font-family="Georgia, serif" font-size="18" letter-spacing="2" fill="#6f1d1b">OLD HOUSE</text>
+</svg>

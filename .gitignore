@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+node_modules/
+.cache/
+tmp/
+scripts/work/
+scripts/masters/
+assets/video/check-*.jpg
+assets/img/og-source.jpg

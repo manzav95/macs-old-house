@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://macs-old-house.onrender.com/sitemap.xml
