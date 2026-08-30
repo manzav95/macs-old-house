@@ -1,21 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 520" role="img" aria-labelledby="logoTitle">
-  <title id="logoTitle">Mac's Old House</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 640" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Mac's Ol House</title>
   <defs>
-    <linearGradient id="enamel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8a2422"/>
-      <stop offset="1" stop-color="#5c1413"/>
-    </linearGradient>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <path d="M20 8h180c8 0 14 6 14 14v476c0 8-6 14-14 14H20c-8 0-14-6-14-14V22c0-8 6-14 14-14z" fill="#3d4a36"/>
-  <path d="M28 18h164c6 0 10 4 10 10v464c0 6-4 10-10 10H28c-6 0-10-4-10-10V28c0-6 4-10 10-10z" fill="url(#enamel)" stroke="#c9a15b" stroke-width="3"/>
-  <g fill="#f3ead8" font-family="Impact, 'Arial Narrow', sans-serif" font-size="78" font-weight="700" text-anchor="middle">
-    <text x="110" y="100">M</text>
-    <text x="110" y="178">A</text>
-    <text x="110" y="256">C</text>
-    <text x="110" y="334">S</text>
+
+  <path fill="#0b0b0b" d="M364 92
+    H168 l-48-36-48 36 v430
+    l28 28 H474 l54-40-54-40 H364 Z"/>
+
+  <path fill="none" stroke="#e31b23" stroke-width="14" stroke-linejoin="miter" filter="url(#glow-red)"
+    d="M364 92
+    H168 l-48-36-48 36 v430
+    l28 28 H474 l54-40-54-40 H364 Z"/>
+  <path fill="none" stroke="#ff4d52" stroke-width="5" stroke-linejoin="miter"
+    d="M352 108
+    H176 l-36-26-36 26 v398
+    l18 18 H460 l36-28-36-28 H352 Z"/>
+
+  <path fill="none" stroke="#e31b23" stroke-width="6" stroke-linejoin="miter"
+    d="M428 548 L474 520 L428 492"/>
+
+  <g fill="#7CFF3A" font-family="Impact, 'Arial Narrow', Arial, sans-serif" font-weight="800" text-anchor="middle" filter="url(#glow-green)">
+    <text x="166" y="168" font-size="72">M</text>
+    <text x="166" y="236" font-size="72">A</text>
+    <text x="166" y="304" font-size="72">C</text>
+    <text x="166" y="368" font-size="56">S</text>
+    <text x="166" y="448" font-size="64">O</text>
+    <text x="166" y="520" font-size="64">L</text>
+    <text x="312" y="558" font-size="52" letter-spacing="6">HOUSE</text>
   </g>
-  <path d="M70 360h80l-40 36z" fill="#4d5c45"/>
-  <rect x="100" y="376" width="20" height="14" fill="#f3ead8" opacity=".85"/>
-  <rect x="42" y="412" width="136" height="54" rx="4" fill="#f3ead8"/>
-  <text x="110" y="446" text-anchor="middle" font-family="Georgia, serif" font-size="18" letter-spacing="2" fill="#6f1d1b">OLD HOUSE</text>
+
+  <g fill="none" stroke="#7CFF3A" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M260 250 L312 250 L286 292 Z"/>
+    <path d="M286 292 v38"/>
+    <path d="M268 330 h36"/>
+  </g>
+  <circle cx="286" cy="268" r="7" fill="#e31b23"/>
+  <path d="M280 262 L298 248" stroke="#f2d35b" stroke-width="3"/>
+
+  <g fill="none" stroke="#f2d35b" stroke-width="3.5" stroke-linejoin="round">
+    <path d="M248 400 L286 368 L324 400 v36 H248 Z"/>
+    <path d="M280 436 v-22 h16 v22"/>
+    <path d="M260 412 h16 v12 h-16 Z"/>
+    <path d="M300 412 h16 v12 h-16 Z"/>
+    <path d="M308 376 v-14 h10"/>
+  </g>
 </svg>

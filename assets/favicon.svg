@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mac's Old House">
-  <rect width="64" height="64" rx="10" fill="#6f1d1b"/>
-  <rect x="5" y="5" width="54" height="54" rx="7" fill="none" stroke="#c9a15b" stroke-width="2"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#f3ead8">M</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mac's Ol House">
+  <rect width="64" height="64" fill="#0b0b0b"/>
+  <path fill="none" stroke="#e31b23" stroke-width="3.2" stroke-linejoin="miter"
+    d="M42 10 H20 l-6-5-6 5 v41 l4 4 H54 l6-6-6-6 H42 Z"/>
+  <path fill="none" stroke="#ff4d52" stroke-width="1.2"
+    d="M40 13 H22 l-4-3-4 3 v35 l2 2 H51 l5-4-5-4 H40 Z"/>
+  <g fill="#7CFF3A" font-family="Impact, Arial Narrow, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="19" y="22" font-size="8">M</text>
+    <text x="19" y="30" font-size="7">A</text>
+    <text x="19" y="38" font-size="7">C</text>
+    <text x="19" y="45" font-size="6">S</text>
+    <text x="38" y="53" font-size="6" letter-spacing="0.6">OL HOUSE</text>
+  </g>
 </svg>
