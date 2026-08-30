@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://macs-old-house.onrender.com/sitemap.xml
+Sitemap: https://manzav95.github.io/macs-old-house/sitemap.xml
