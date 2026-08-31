@@ -43,7 +43,48 @@
     });
   }
 
-  if (reduce.matches) return;
+  const landHero = () => {
+    document.querySelector(".hero")?.classList.add("is-landed");
+  };
+
+  const showEl = (el) => {
+    if (!el || el.classList.contains("is-in")) return;
+    el.classList.add("is-in");
+  };
+
+  const revealInView = () => {
+    const line = window.innerHeight * 0.78;
+    document.querySelectorAll("[data-reveal]:not(.is-in)").forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < line && r.bottom > 0) showEl(el);
+    });
+  };
+
+  if (reduce.matches) {
+    landHero();
+    document.querySelectorAll("[data-reveal]").forEach(showEl);
+    return;
+  }
+
+  requestAnimationFrame(() => requestAnimationFrame(landHero));
+
+  const reveals = [...document.querySelectorAll("[data-reveal]")];
+
+  if (reveals.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        showEl(entry.target);
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0, rootMargin: "0px 0px -22% 0px" });
+    reveals.forEach((el) => io.observe(el));
+  }
+
+  window.addEventListener("scroll", revealInView, { passive: true });
+  window.addEventListener("resize", revealInView, { passive: true });
+  requestAnimationFrame(revealInView);
+
 
   let ticking = false;
   const update = () => {
